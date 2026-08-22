@@ -34,7 +34,7 @@ examdemon.exe [options]
   -c           Bao gồm bình luận cộng đồng
   -w int       Số goroutine đồng thời (default: 8)
   -exams       Liệt kê tất cả đề thi của nhà cung cấp
-
+---
 ## Examples
 
 ```bash
