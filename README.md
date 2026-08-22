@@ -1,4 +1,4 @@
-# ExamDemon v1.0 — by Demongod [08/2026]
+# ExamDemon v1.0 — by Bibi318 [08/2026]
 
 > ExamTopics scraper nhẹ, nhanh, không cần Docker.  
 > Chỉ 1 file binary, chạy ngay trên Windows/Linux/macOS.
