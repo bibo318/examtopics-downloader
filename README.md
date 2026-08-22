@@ -1,7 +1,8 @@
-# ExamDemon v1.0 — by Demongod [08/2026]
+# ExamDemon v1.0 — by Bibi318 [08/2026]
 
 > ExamTopics scraper nhẹ, nhanh, không cần Docker.  
 > Chỉ 1 file binary, chạy ngay trên Windows/Linux/macOS.
+<img width="1869" height="1298" alt="image" src="https://github.com/user-attachments/assets/a2fb7e53-0a9f-45da-bc08-03c333030f55" />
 
 ---
 
@@ -78,19 +79,19 @@ examdemon.exe -p google -s cloud-digital -w 15 -f html
 
 ---
 
-## So sánh với bản gốc (thatonecodes/examtopics-downloader)
+## Chức năng (examtopics-downloader)
 
-| Tính năng         | Bản gốc        | ExamDemon      |
-|-------------------|----------------|----------------|
-| Ngôn ngữ          | Go             | Go             |
-| Docker            | Bắt buộc       | **Không cần**  |
-| Setup             | Phức tạp       | `go run .`     |
-| Binary size       | ~10MB+         | **~9MB (-s -w)** |
-| Dependencies      | 7+             | **1** (goquery)|
-| PDF export        | Có             | Không (nhẹ hơn)|
-| GitHub cache      | Có             | Không (đơn giản) |
-| Định dạng output  | md/json/html/pdf | md/json/html/txt |
-| Progress display  | progress bar   | inline counter |
+| Tính năng         | ExamDemon        |
+|-------------------|----------------  |
+| Ngôn ngữ          | Go               |
+| Docker            | **Không cần**    |
+| Setup             | `go run .`       |
+| Binary size       | **~9MB (-s -w)** |
+| Dependencies      | **1** (goquery)  |
+| PDF export        | Không (nhẹ hơn)  |
+| GitHub cache      | Không (đơn giản) |
+| Định dạng output  | md/json/html/txt |
+| Progress display  | inline counter   |
 
 ---
 
@@ -109,4 +110,4 @@ GOOS=darwin GOARCH=arm64 go build -ldflags="-s -w" -o examdemon .
 
 ---
 
-*ExamDemon v1.0 — Tạo bởi Demongod, tháng 8/2026*
+*ExamDemon v1.0 — Tạo bởi Bibo318, tháng 8/2026*
