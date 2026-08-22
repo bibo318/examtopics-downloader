@@ -38,7 +38,7 @@ func writeMD(path string, questions []Question, withComments bool) error {
 		if withComments && q.Comments != "" {
 			fmt.Fprintf(f, "<details><summary>Bình luận cộng đồng</summary>\n\n%s\n\n</details>\n\n", q.Comments)
 		}
-		fmt.Fprintln(f, "---\n")
+		fmt.Fprintln(f, "---")
 	}
 	return nil
 }
