@@ -1,5 +1,40 @@
+# ExamDemon v1.0 — by Bibi318 [08/2026]
+> Lightweight, fast ExamTopics scraper. No Docker required.  
+> Single binary, runs instantly on Windows/Linux/macOS.
+
+![ExamDemon Screenshot](https://github.com/user-attachments/assets/a2fb7e53-0a9f-45da-bc08-03c333030f55)
 
 ---
+
+## Quick Install
+
+**Requirements:** [Go >= 1.21](https://go.dev/dl/)
+
+```bash
+git clone <repo>
+cd examdemon
+go build -o examdemon.exe .
+```
+
+Or run directly without building:
+
+```bash
+go run . -p amazon -s scs-c03
+```
+
+---
+
+## Usage
+---
+examdemon.exe [options]
+  -p string    Nhà cung cấp chứng chỉ (default: google)
+  -s string    Chuỗi tìm kiếm tên đề thi (bắt buộc)
+  -o string    Đường dẫn file đầu ra (default: output.md)
+  -f string    Định dạng: md | json | txt | html (default: md)
+  -c           Bao gồm bình luận cộng đồng
+  -w int       Số goroutine đồng thời (default: 8)
+  -exams       Liệt kê tất cả đề thi của nhà cung cấp
+
 ## Examples
 
 ```bash
