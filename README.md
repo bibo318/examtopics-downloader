@@ -2,6 +2,7 @@
 
 > ExamTopics scraper nhẹ, nhanh, không cần Docker.  
 > Chỉ 1 file binary, chạy ngay trên Windows/Linux/macOS.
+<img width="1869" height="1298" alt="image" src="https://github.com/user-attachments/assets/a2fb7e53-0a9f-45da-bc08-03c333030f55" />
 
 ---
 
