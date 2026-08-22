@@ -1,6 +1,7 @@
 # ExamDemon v1.0 — by Bibi318 [08/2026]
-> Lightweight, fast ExamTopics scraper. No Docker required.  
-> Single binary, runs instantly on Windows/Linux/macOS.
+
+> Lightweight, fast ExamTopics scraper. No Docker required.
+> Single binary, runs instantly on Windows / Linux / macOS.
 
 ![ExamDemon Screenshot](https://github.com/user-attachments/assets/a2fb7e53-0a9f-45da-bc08-03c333030f55)
 
@@ -25,16 +26,20 @@ go run . -p amazon -s scs-c03
 ---
 
 ## Usage
----
+
+```
 examdemon.exe [options]
-  -p string    Nhà cung cấp chứng chỉ (default: google)
-  -s string    Chuỗi tìm kiếm tên đề thi (bắt buộc)
-  -o string    Đường dẫn file đầu ra (default: output.md)
-  -f string    Định dạng: md | json | txt | html (default: md)
-  -c           Bao gồm bình luận cộng đồng
-  -w int       Số goroutine đồng thời (default: 8)
-  -exams       Liệt kê tất cả đề thi của nhà cung cấp
+  -p string    Certificate provider (default: google)
+  -s string    Exam name search string (required)
+  -o string    Output file path (default: output.md)
+  -f string    Format: md | json | txt | html (default: md)
+  -c           Include community comments
+  -w int       Number of concurrent goroutines (default: 8)
+  -exams       List all exams for a provider
+```
+
 ---
+
 ## Examples
 
 ```bash
@@ -53,39 +58,41 @@ examdemon.exe -p amazon -exams
 # Use more goroutines for faster downloads
 examdemon.exe -p google -s cloud-digital -w 15 -f html
 ```
+
 ---
+
 ## Supported Providers
 
-| Flag`-p`           | Provider           |
-| -------------------- | ------------------ |
-| `amazon`           | AWS Certifications |
-| `cisco`            | Cisco / CCNA       |
-| `comptia`          | CompTIA            |
-| `microsoft`        | Microsoft / Azure  |
-| `google`           | Google Cloud       |
-| `isc2`             | ISC2 / CISSP       |
-| `isaca`            | ISACA / CISM       |
-| `fortinet`         | Fortinet NSE       |
-| `juniper`          | Juniper            |
-| `ec-council`       | CEH / EC-Council   |
-| `oracle`           | Oracle             |
-| `paloaltonetworks` | Palo Alto PCNSA    |
+| Flag `-p`            | Provider           |
+|----------------------|--------------------|
+| `amazon`             | AWS Certifications |
+| `cisco`              | Cisco / CCNA       |
+| `comptia`            | CompTIA            |
+| `microsoft`          | Microsoft / Azure  |
+| `google`             | Google Cloud       |
+| `isc2`               | ISC2 / CISSP       |
+| `isaca`              | ISACA / CISM       |
+| `fortinet`           | Fortinet NSE       |
+| `juniper`            | Juniper            |
+| `ec-council`         | CEH / EC-Council   |
+| `oracle`             | Oracle             |
+| `paloaltonetworks`   | Palo Alto PCNSA    |
 
 ---
 
 ## Features
 
-| Feature          | ExamDemon              |
-| ---------------- | ---------------------- |
-| Language         | Go                     |
-| Docker           | **Not required** |
-| Setup            | `go run .`           |
-| Binary size      | **~9MB (-s -w)** |
-| Dependencies     | **1** (goquery)  |
-| PDF export       | No (keeps it lean)     |
-| GitHub cache     | No (keeps it simple)   |
-| Output formats   | md / json / html / txt |
-| Progress display | Inline counter         |
+| Feature            | ExamDemon              |
+|--------------------|------------------------|
+| Language           | Go                     |
+| Docker             | **Not required**       |
+| Setup              | `go run .`             |
+| Binary size        | **~9MB (-s -w)**       |
+| Dependencies       | **1** (goquery)        |
+| PDF export         | No (keeps it lean)     |
+| GitHub cache       | No (keeps it simple)   |
+| Output formats     | md / json / html / txt |
+| Progress display   | Inline counter         |
 
 ---
 
